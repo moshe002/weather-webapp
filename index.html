@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Weather App</title>
+</head>
+<body>
+    <h1 class="title">Weather Finder</h1>
+    <div class="search-bar-container">
+        <input type="text" placeholder="Input City here..." class="search-bar">
+        <br><br><br>
+        <input type="submit" name="button" class="submit-button" onclick="displayResults()">
+    </div>
+    <div id="results">
+        <h2 class="city">Manila</h2>
+        <br>
+        <h1 class="temp">51°C</h1>
+        <div class="flex">
+            <img src="https://openweathermap.org/img/wn/04n.png" alt="logo" class="icon">
+            <div class="description">Cloudy</div>
+        </div>
+    </div>
+</body>
+</html>
