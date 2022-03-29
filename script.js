@@ -3,11 +3,11 @@ function displayResults() {
 }
 
 
-// document.getElementById('results').addEventListener("keyup", function(event){
-//     if(event.key == "Enter"){
-//         displayResults();
-//     }
-// });
+document.querySelector('.search-bar').addEventListener("keypress", function(event){ /* THIS FUNCTION WILL DISPLAY RESULTS WHEN YOU PRESS 'ENTER' */ 
+    if(event.key == "Enter"){
+        displayResults();
+    }
+});
 
 let weather = {
     "apiKey": "318fcee66cfedaddd04d16c4980e7f37",
@@ -38,6 +38,7 @@ let weather = {
 
 document.querySelector(".submit-button").addEventListener("click", function() {
     weather.search();
+    displayResults();
 })
 
 document.querySelector(".search-bar").addEventListener("keyup", function(event) {
